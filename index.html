@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Links</h1>
+    <p id="error"></p>
+    <button id="modalTest"> Test </button>
+    <!--modal-->
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h1>Add Links</h1>
+            <label for="image">Select an image:</label> <input type="file" id="image" name="myImage">
+            <input type="text" id="Name_input" placeholder="Enter Name of the link">
+            <input type="text" id="link_input" placeholder="Enter link URL" required>     
+            <button id="Close" onclick="pushlinks()">Add Link</button>
+        </div>
+    </div>
+    <ul id="list_links">
+
+    </ul>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html> 

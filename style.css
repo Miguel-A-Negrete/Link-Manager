@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+.modal-container {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 5px;
+  width: 600px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#link_input, #Name_input {
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+}
+
+#image{
+  margin-bottom: 5px;
+}
+
+#Close {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100px;
+}
+
+
+
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+#list_links{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+}
+
+
+#links {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+#links:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#edit{
+    margin-right: 5px;
+}
+
+#edit, #delete{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#Name_input {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+}
+#addLink {
+    margin-bottom: 10px;
+}
+
+.image_link {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
